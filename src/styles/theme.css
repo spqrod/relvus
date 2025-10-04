@@ -1,0 +1,17 @@
+:root{
+  --primary-color: #c4552b;      /* warm terracotta */
+  --primary-contrast: #ffffff;
+  --text-color: #1e1b18;
+  --muted-text: #5b4a45;
+  --bg-color: #fff8f5;
+  --secondary-bg: #fff;
+  --input-bg: #fff6f2;
+  --border-color: #f0dcd6;
+  --accent-gradient: linear-gradient(90deg,#c4552b 0%,#e07b4a 100%);
+  --section-padding: 84px;
+  --border-radius: 14px;
+  --font-main: 'Inter', system-ui, -apple-system, Roboto, "Helvetica Neue", Arial;
+  --font-heading: 'Playfair Display', serif;
+  --header-height: 92px;
+  --elevation-1: 0 10px 30px rgba(30,27,24,0.06);
+}

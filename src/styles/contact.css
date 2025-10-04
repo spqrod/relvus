@@ -1,0 +1,36 @@
+.contact {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .contact-intro {
+    text-align: center;
+    padding: var(--section-padding) 20px;
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 28px;
+    }
+
+    p {
+      font-size: 1.25rem;
+      max-width: 600px;
+      margin: 20px auto;
+      color: rgba(241, 245, 249, 0.9);
+    }
+  }
+
+  .contact-whatsapp {
+    text-align: center;
+    padding: 40px 20px 120px;
+
+    .whatsapp-button {
+      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+      font-size: 1.2rem;
+      padding: 22px 50px;
+    }
+
+    .whatsapp-button:hover {
+      box-shadow: 0 12px 36px rgba(37, 211, 102, 0.5);
+    }
+  }
+}

@@ -1,0 +1,206 @@
+.services {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+
+  .services-intro {
+    text-align: center;
+    padding: var(--section-padding) 20px;
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 28px;
+    }
+
+    p {
+      font-size: 1.25rem;
+      max-width: 800px;
+      margin: 20px auto;
+      color: rgba(241, 245, 249, 0.9);
+    }
+  }
+
+  .service-item {
+    padding: 48px;
+    margin: 40px 0;
+    border: 2px solid var(--border-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, rgba(255, 107, 157, 0.05) 0%, rgba(192, 132, 252, 0.05) 100%);
+    backdrop-filter: blur(20px);
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(192, 132, 252, 0.1) 0%, transparent 70%);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .service-header {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 28px;
+
+      .service-main-icon {
+        width: 80px;
+        height: 80px;
+        transition: transform 0.3s ease;
+      }
+
+      h2 {
+        font-size: 2.5rem;
+        margin-bottom: 8px;
+      }
+
+      .service-subtitle {
+        font-size: 1.1rem;
+        color: var(--primary-color);
+        margin: 0;
+      }
+    }
+
+    > p {
+      margin-bottom: 32px;
+      color: rgba(241, 245, 249, 0.9);
+      line-height: 1.8;
+      font-size: 1.05rem;
+    }
+
+    .service-features {
+      margin: 32px 0;
+      padding: 28px;
+      background: rgba(30, 41, 59, 0.3);
+      border-radius: 16px;
+      border: 1px solid var(--border-color);
+
+      h3 {
+        font-size: 1.4rem;
+        color: #fff;
+        margin-bottom: 20px;
+        font-weight: 700;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          padding: 12px 0;
+          padding-left: 32px;
+          position: relative;
+          color: rgba(241, 245, 249, 0.85);
+          line-height: 1.6;
+
+          &::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+
+    .service-ideal {
+      margin: 28px 0;
+      padding: 24px;
+      background: linear-gradient(135deg, rgba(96, 165, 250, 0.1) 0%, rgba(192, 132, 252, 0.1) 100%);
+      border-radius: 12px;
+      border-left: 4px solid var(--accent-color);
+
+      h3 {
+        font-size: 1.2rem;
+        color: #fff;
+        margin-bottom: 12px;
+        font-weight: 700;
+      }
+
+      p {
+        margin: 0;
+        color: rgba(241, 245, 249, 0.9);
+        line-height: 1.7;
+      }
+    }
+
+    .service-pricing {
+      display: flex;
+      gap: 40px;
+      margin: 32px 0;
+      padding: 24px;
+      background: rgba(255, 107, 157, 0.05);
+      border-radius: 12px;
+      border: 1px solid var(--border-color);
+
+      .pricing-detail {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .pricing-label {
+          font-size: 0.9rem;
+          color: rgba(241, 245, 249, 0.6);
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+        }
+
+        .pricing-value {
+          font-size: 1.3rem;
+          font-weight: 700;
+          color: var(--primary-color);
+        }
+      }
+    }
+
+    button {
+      margin-top: 24px;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  .service-item:hover {
+    transform: translateY(-8px) scale(1.01);
+    border-color: var(--primary-color);
+    box-shadow: 0 20px 60px rgba(255, 107, 157, 0.3);
+  }
+
+  .service-item:hover::before {
+    opacity: 1;
+  }
+
+  .service-item:hover .service-main-icon {
+    transform: scale(1.1) translateY(-4px);
+  }
+
+  .services-cta {
+    text-align: center;
+    padding: 80px 20px;
+    margin-top: 60px;
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: rgba(241, 245, 249, 0.8);
+      margin-bottom: 32px;
+    }
+
+    .whatsapp-cta {
+      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    }
+  }
+}
