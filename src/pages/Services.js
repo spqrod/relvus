@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/services.css';
+import serviceLanding from '../images/service-landing.svg';
+import serviceBusiness from '../images/service-business.svg';
+import serviceCms from '../images/service-cms.svg';
 
 function Services() {
   return (
@@ -12,7 +15,7 @@ function Services() {
 
       <div className="service-item">
         <div className="service-header">
-          <img src="/service-landing.svg" alt="Landing Page" className="service-main-icon" />
+          <img src={serviceLanding} alt="Landing Page" className="service-main-icon" />
           <div>
             <h2>Landing Page</h2>
             <p className="service-subtitle">Páginas de aterrizaje efectivas que convierten visitantes en clientes</p>
@@ -56,7 +59,7 @@ function Services() {
 
       <div className="service-item">
         <div className="service-header">
-          <img src="/service-business.svg" alt="Sitio Web Empresarial" className="service-main-icon" />
+          <img src={serviceBusiness} alt="Sitio Web Empresarial" className="service-main-icon" />
           <div>
             <h2>Sitio Web Empresarial</h2>
             <p className="service-subtitle">Sitios corporativos completos que reflejan la profesionalidad de tu empresa</p>
@@ -102,7 +105,7 @@ function Services() {
 
       <div className="service-item">
         <div className="service-header">
-          <img src="/service-cms.svg" alt="Sistema de Gestión" className="service-main-icon" />
+          <img src={serviceCms} alt="Sistema de Gestión" className="service-main-icon" />
           <div>
             <h2>Sistema de Gestión de Clientes</h2>
             <p className="service-subtitle">Plataformas personalizadas para administrar tu negocio eficientemente</p>

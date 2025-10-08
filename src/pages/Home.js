@@ -1,13 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/home.css';
+import heroImage from '../images/hero-abstract.svg';
+import serviceLanding from '../images/service-landing.svg';
+import serviceBusiness from '../images/service-business.svg';
+import serviceCms from '../images/service-cms.svg';
+import reviewer1 from '../images/reviewer-1.jpg';
+import reviewer2 from '../images/reviewer-2.jpg';
+import reviewer3 from '../images/reviewer-3.jpg';
 
 function Home() {
   return (
     <div className="home">
       <section className="hero-section">
         <div className="hero-content">
-          <img src="/hero-abstract.svg" alt="Abstract Form" className="hero-image" />
+          <img src={heroImage} alt="Abstract Form" className="hero-image" />
           <div className="text-container">
             <h1>Creamos tu sitio web</h1>
             <p>Diseño y desarrollo web profesional en Argentina</p>
@@ -24,7 +31,7 @@ function Home() {
           <div className="services-items">
             <div className="service-item">
               <div className="service-icon">
-                <img src="/service-landing.svg" alt="Landing Page" />
+                <img src={serviceLanding} alt="Landing Page" />
               </div>
               <h3>Landing Page</h3>
               <p>Páginas de aterrizaje efectivas que convierten visitantes en clientes</p>
@@ -35,7 +42,7 @@ function Home() {
             </div>
             <div className="service-item">
               <div className="service-icon">
-                <img src="/service-business.svg" alt="Sitio Web Empresarial" />
+                <img src={serviceBusiness} alt="Sitio Web Empresarial" />
               </div>
               <h3>Sitio Web Empresarial</h3>
               <p>Sitios corporativos completos que reflejan la profesionalidad de tu empresa</p>
@@ -46,7 +53,7 @@ function Home() {
             </div>
             <div className="service-item">
               <div className="service-icon">
-                <img src="/service-cms.svg" alt="Sistema de Gestión" />
+                <img src={serviceCms} alt="Sistema de Gestión" />
               </div>
               <h3>Sistema de Gestión de Clientes</h3>
               <p>Plataformas personalizadas para administrar tu negocio eficientemente</p>
@@ -94,7 +101,7 @@ function Home() {
             <div className="stars">⭐⭐⭐⭐⭐</div>
             <p>"Excelente trabajo, superaron nuestras expectativas. El sitio quedó increíble y las ventas aumentaron notablemente."</p>
             <div className="reviewer-info">
-              <img src="/reviewer-1.jpg" alt="Santiago López" className="reviewer-image" />
+              <img src={reviewer1} alt="Santiago López" className="reviewer-image" />
               <div>
                 <strong>Santiago López</strong>
                 <p>Director de E-commerce</p>
@@ -105,7 +112,7 @@ function Home() {
             <div className="stars">⭐⭐⭐⭐⭐</div>
             <p>"Muy profesionales y atentos a cada detalle. La comunicación fue excelente durante todo el proyecto."</p>
             <div className="reviewer-info">
-              <img src="/reviewer-3.jpg" alt="Lucía Martínez" className="reviewer-image" />
+              <img src={reviewer3} alt="Lucía Martínez" className="reviewer-image" />
               <div>
                 <strong>Lucía Martínez</strong>
                 <p>CEO Startup Tech</p>
@@ -116,7 +123,7 @@ function Home() {
             <div className="stars">⭐⭐⭐⭐⭐</div>
             <p>"El mejor equipo con el que trabajé. Entregaron antes de tiempo y el resultado superó mis expectativas."</p>
             <div className="reviewer-info">
-              <img src="/reviewer-2.jpg" alt="Diego Fernández" className="reviewer-image" />
+              <img src={reviewer2} alt="Diego Fernández" className="reviewer-image" />
               <div>
                 <strong>Diego Fernández</strong>
                 <p>Gerente de Marketing</p>
