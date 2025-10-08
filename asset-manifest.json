@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/relvus/static/css/main.1e28971c.css",
+    "main.js": "/relvus/static/js/main.0490e91a.js",
+    "index.html": "/relvus/index.html",
+    "main.1e28971c.css.map": "/relvus/static/css/main.1e28971c.css.map",
+    "main.0490e91a.js.map": "/relvus/static/js/main.0490e91a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e28971c.css",
+    "static/js/main.0490e91a.js"
+  ]
+}

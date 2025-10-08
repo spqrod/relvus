@@ -1,0 +1,101 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="spacesuit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0e7ff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="helmet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#c084fc;stop-opacity:0.2" />
+    </linearGradient>
+    <linearGradient id="llamaFur" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5e6d3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4b896;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ff6b9d;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#c084fc;stop-opacity:0" />
+    </radialGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#ff6b9d" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Glow background -->
+  <circle cx="200" cy="200" r="180" fill="url(#glow)"/>
+  
+  <!-- Spacesuit body -->
+  <ellipse cx="200" cy="260" rx="80" ry="95" fill="url(#spacesuit)" filter="url(#shadow)"/>
+  <rect x="160" y="220" width="80" height="80" rx="10" fill="url(#spacesuit)" filter="url(#shadow)"/>
+  
+  <!-- Control panel on chest -->
+  <rect x="175" y="250" width="50" height="35" rx="5" fill="#1e293b" opacity="0.8"/>
+  <circle cx="190" cy="265" r="4" fill="#ff6b9d"/>
+  <circle cx="210" cy="265" r="4" fill="#60a5fa"/>
+  <rect x="180" y="275" width="15" height="3" rx="1.5" fill="#c084fc"/>
+  <rect x="205" y="275" width="15" height="3" rx="1.5" fill="#c084fc"/>
+  
+  <!-- Arms -->
+  <ellipse cx="130" cy="260" rx="25" ry="50" fill="url(#spacesuit)" transform="rotate(-20 130 260)" filter="url(#shadow)"/>
+  <ellipse cx="270" cy="260" rx="25" ry="50" fill="url(#spacesuit)" transform="rotate(20 270 260)" filter="url(#shadow)"/>
+  
+  <!-- Gloves -->
+  <circle cx="120" cy="300" r="18" fill="url(#spacesuit)" filter="url(#shadow)"/>
+  <circle cx="280" cy="300" r="18" fill="url(#spacesuit)" filter="url(#shadow)"/>
+  
+  <!-- Llama neck -->
+  <ellipse cx="200" cy="180" rx="35" ry="60" fill="url(#llamaFur)" filter="url(#shadow)"/>
+  
+  <!-- Llama head -->
+  <ellipse cx="200" cy="120" rx="45" ry="50" fill="url(#llamaFur)" filter="url(#shadow)"/>
+  
+  <!-- Llama ears -->
+  <ellipse cx="175" cy="90" rx="12" ry="25" fill="url(#llamaFur)" transform="rotate(-25 175 90)"/>
+  <ellipse cx="225" cy="90" rx="12" ry="25" fill="url(#llamaFur)" transform="rotate(25 225 90)"/>
+  <ellipse cx="175" cy="90" rx="6" ry="15" fill="#f5cba7" transform="rotate(-25 175 90)"/>
+  <ellipse cx="225" cy="90" rx="6" ry="15" fill="#f5cba7" transform="rotate(25 225 90)"/>
+  
+  <!-- Llama snout -->
+  <ellipse cx="200" cy="135" rx="28" ry="22" fill="#f5cba7"/>
+  <ellipse cx="192" cy="138" rx="4" ry="3" fill="#4a3728"/>
+  <ellipse cx="208" cy="138" rx="4" ry="3" fill="#4a3728"/>
+  
+  <!-- Llama nose -->
+  <ellipse cx="200" cy="148" rx="10" ry="7" fill="#d4a574"/>
+  <ellipse cx="197" cy="148" rx="3" ry="4" fill="#4a3728"/>
+  <ellipse cx="203" cy="148" rx="3" ry="4" fill="#4a3728"/>
+  
+  <!-- Llama eyes -->
+  <ellipse cx="185" cy="115" rx="8" ry="11" fill="#4a3728"/>
+  <ellipse cx="215" cy="115" rx="8" ry="11" fill="#4a3728"/>
+  <circle cx="186" cy="113" r="3" fill="#ffffff"/>
+  <circle cx="216" cy="113" r="3" fill="#ffffff"/>
+  
+  <!-- Space helmet -->
+  <circle cx="200" cy="120" r="75" fill="url(#helmet)" opacity="0.6" filter="url(#shadow)"/>
+  <circle cx="200" cy="120" r="75" fill="none" stroke="#ffffff" stroke-width="4" opacity="0.4"/>
+  <circle cx="200" cy="120" r="72" fill="none" stroke="#60a5fa" stroke-width="1" opacity="0.6"/>
+  
+  <!-- Helmet reflections -->
+  <ellipse cx="165" cy="95" rx="20" ry="25" fill="#ffffff" opacity="0.3" transform="rotate(-30 165 95)"/>
+  <ellipse cx="230" cy="110" rx="12" ry="15" fill="#ffffff" opacity="0.2" transform="rotate(20 230 110)"/>
+  
+  <!-- Helmet connection to suit -->
+  <rect x="180" y="185" width="40" height="15" rx="7" fill="#cbd5e1"/>
+  <circle cx="190" cy="192" r="3" fill="#64748b"/>
+  <circle cx="200" cy="192" r="3" fill="#64748b"/>
+  <circle cx="210" cy="192" r="3" fill="#64748b"/>
+  
+  <!-- Oxygen tubes -->
+  <path d="M 220 195 Q 240 200 250 220" stroke="#60a5fa" stroke-width="6" fill="none" opacity="0.7"/>
+  <path d="M 180 195 Q 160 200 150 220" stroke="#60a5fa" stroke-width="6" fill="none" opacity="0.7"/>
+  
+  <!-- Stars around -->
+  <circle cx="80" cy="100" r="2" fill="#ffffff" opacity="0.8"/>
+  <circle cx="320" cy="130" r="2" fill="#ffffff" opacity="0.8"/>
+  <circle cx="90" cy="280" r="2" fill="#ffffff" opacity="0.8"/>
+  <circle cx="310" cy="250" r="2" fill="#ffffff" opacity="0.8"/>
+  <circle cx="120" cy="80" r="1.5" fill="#60a5fa" opacity="0.9"/>
+  <circle cx="290" cy="90" r="1.5" fill="#ff6b9d" opacity="0.9"/>
+  <circle cx="340" cy="200" r="1.5" fill="#c084fc" opacity="0.9"/>
+</svg>
