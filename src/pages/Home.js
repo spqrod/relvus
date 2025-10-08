@@ -105,7 +105,7 @@ function Home() {
             <div className="stars">⭐⭐⭐⭐⭐</div>
             <p>"Muy profesionales y atentos a cada detalle. La comunicación fue excelente durante todo el proyecto."</p>
             <div className="reviewer-info">
-              <img src="/reviewer-2.jpg" alt="Lucía Martínez" className="reviewer-image" />
+              <img src="/reviewer-3.jpg" alt="Lucía Martínez" className="reviewer-image" />
               <div>
                 <strong>Lucía Martínez</strong>
                 <p>CEO Startup Tech</p>
@@ -116,7 +116,7 @@ function Home() {
             <div className="stars">⭐⭐⭐⭐⭐</div>
             <p>"El mejor equipo con el que trabajé. Entregaron antes de tiempo y el resultado superó mis expectativas."</p>
             <div className="reviewer-info">
-              <img src="/reviewer-3.jpg" alt="Diego Fernández" className="reviewer-image" />
+              <img src="/reviewer-2.jpg" alt="Diego Fernández" className="reviewer-image" />
               <div>
                 <strong>Diego Fernández</strong>
                 <p>Gerente de Marketing</p>

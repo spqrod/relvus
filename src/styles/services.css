@@ -5,24 +5,25 @@
 
   .services-intro {
     text-align: center;
-    padding: var(--section-padding) 20px;
+    padding: 80px 20px 60px;
 
     h1 {
       font-size: 4rem;
-      margin-bottom: 28px;
+      margin-bottom: 24px;
     }
 
     p {
       font-size: 1.25rem;
       max-width: 800px;
-      margin: 20px auto;
+      margin: 0 auto;
       color: rgba(241, 245, 249, 0.9);
+      line-height: 1.6;
     }
   }
 
   .service-item {
     padding: 48px;
-    margin: 40px 0;
+    margin: 48px 0;
     border: 2px solid var(--border-color);
     border-radius: var(--border-radius);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
@@ -48,23 +49,30 @@
       display: flex;
       align-items: center;
       gap: 24px;
-      margin-bottom: 28px;
+      margin-bottom: 32px;
 
       .service-main-icon {
         width: 80px;
         height: 80px;
+        flex-shrink: 0;
         transition: transform 0.3s ease;
+      }
+
+      > div {
+        flex: 1;
       }
 
       h2 {
         font-size: 2.5rem;
         margin-bottom: 8px;
+        line-height: 1.2;
       }
 
       .service-subtitle {
-        font-size: 1.1rem;
+        font-size: 1.15rem;
         color: var(--primary-color);
         margin: 0;
+        font-weight: 500;
       }
     }
 
@@ -77,28 +85,30 @@
 
     .service-features {
       margin: 32px 0;
-      padding: 28px;
-      background: rgba(30, 41, 59, 0.3);
+      padding: 32px;
+      background: rgba(30, 41, 59, 0.4);
       border-radius: 16px;
       border: 1px solid var(--border-color);
 
       h3 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         color: #fff;
-        margin-bottom: 20px;
+        margin-bottom: 24px;
         font-weight: 700;
       }
 
       ul {
         list-style: none;
         padding: 0;
+        margin: 0;
 
         li {
-          padding: 12px 0;
-          padding-left: 32px;
+          padding: 14px 0;
+          padding-left: 36px;
           position: relative;
           color: rgba(241, 245, 249, 0.85);
-          line-height: 1.6;
+          line-height: 1.7;
+          font-size: 1rem;
 
           &::before {
             content: '✓';
@@ -106,23 +116,27 @@
             left: 0;
             color: var(--primary-color);
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
+          }
+
+          &:not(:last-child) {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
           }
         }
       }
     }
 
     .service-ideal {
-      margin: 28px 0;
-      padding: 24px;
+      margin: 32px 0;
+      padding: 28px;
       background: linear-gradient(135deg, rgba(96, 165, 250, 0.1) 0%, rgba(192, 132, 252, 0.1) 100%);
-      border-radius: 12px;
+      border-radius: 16px;
       border-left: 4px solid var(--accent-color);
 
       h3 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         color: #fff;
-        margin-bottom: 12px;
+        margin-bottom: 14px;
         font-weight: 700;
       }
 
@@ -130,32 +144,34 @@
         margin: 0;
         color: rgba(241, 245, 249, 0.9);
         line-height: 1.7;
+        font-size: 1rem;
       }
     }
 
     .service-pricing {
       display: flex;
-      gap: 40px;
+      gap: 48px;
       margin: 32px 0;
-      padding: 24px;
+      padding: 28px;
       background: rgba(255, 107, 157, 0.05);
-      border-radius: 12px;
+      border-radius: 16px;
       border: 1px solid var(--border-color);
 
       .pricing-detail {
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        gap: 10px;
 
         .pricing-label {
           font-size: 0.9rem;
           color: rgba(241, 245, 249, 0.6);
           text-transform: uppercase;
           letter-spacing: 0.5px;
+          font-weight: 600;
         }
 
         .pricing-value {
-          font-size: 1.3rem;
+          font-size: 1.4rem;
           font-weight: 700;
           color: var(--primary-color);
         }
@@ -196,11 +212,76 @@
     p {
       font-size: 1.2rem;
       color: rgba(241, 245, 249, 0.8);
-      margin-bottom: 32px;
+      margin-bottom: 36px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .whatsapp-cta {
       background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+      font-size: 1.15rem;
+      padding: 20px 48px;
+
+      &:hover {
+        box-shadow: 0 12px 36px rgba(37, 211, 102, 0.5);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    .services-intro {
+      padding: 60px 20px 40px;
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+    }
+
+    .service-item {
+      padding: 32px 24px;
+      margin: 32px 0;
+
+      .service-header {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+        h2 {
+          font-size: 2rem;
+        }
+
+        .service-subtitle {
+          font-size: 1rem;
+        }
+      }
+
+      .service-features {
+        padding: 24px;
+
+        h3 {
+          font-size: 1.3rem;
+        }
+      }
+
+      .service-pricing {
+        flex-direction: column;
+        gap: 24px;
+      }
+    }
+
+    .services-cta {
+      padding: 60px 20px;
+
+      h2 {
+        font-size: 2rem;
+      }
     }
   }
 }

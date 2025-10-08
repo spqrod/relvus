@@ -15,7 +15,7 @@ function Header() {
   return (
     <header className="header">
       <div className="nav-container">
-        <Link to="/" className="logo" onClick={handleLogoClick}>relvus</Link>
+        <Link to="/" className="logo" onClick={handleLogoClick}>Relvus</Link>
         <nav>
           <ul className="nav-links">
             <li><Link to="/">Inicio</Link></li>

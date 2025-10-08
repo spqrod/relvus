@@ -15,7 +15,7 @@ function Services() {
           <img src="/service-landing.svg" alt="Landing Page" className="service-main-icon" />
           <div>
             <h2>Landing Page</h2>
-            <p className="service-subtitle">Convierte visitantes en clientes</p>
+            <p className="service-subtitle">Páginas de aterrizaje efectivas que convierten visitantes en clientes</p>
           </div>
         </div>
         
@@ -59,7 +59,7 @@ function Services() {
           <img src="/service-business.svg" alt="Sitio Web Empresarial" className="service-main-icon" />
           <div>
             <h2>Sitio Web Empresarial</h2>
-            <p className="service-subtitle">Tu presencia digital profesional</p>
+            <p className="service-subtitle">Sitios corporativos completos que reflejan la profesionalidad de tu empresa</p>
           </div>
         </div>
         
@@ -91,7 +91,7 @@ function Services() {
           </div>
           <div className="pricing-detail">
             <span className="pricing-label">Tiempo de entrega</span>
-            <span className="pricing-value">Desde 2 semanas</span>
+            <span className="pricing-value">Desde 1 semana</span>
           </div>
         </div>
 
@@ -105,7 +105,7 @@ function Services() {
           <img src="/service-cms.svg" alt="Sistema de Gestión" className="service-main-icon" />
           <div>
             <h2>Sistema de Gestión de Clientes</h2>
-            <p className="service-subtitle">Automatiza tu negocio</p>
+            <p className="service-subtitle">Plataformas personalizadas para administrar tu negocio eficientemente</p>
           </div>
         </div>
         
