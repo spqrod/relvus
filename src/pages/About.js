@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/about.css';
+import rodionImg from '../images/rodion.jpg';
+import maxImg from '../images/max.jpg';
+import sashaImg from '../images/sasha.jpg';
 
 function About() {
   return (
@@ -14,19 +17,19 @@ function About() {
         <h2>Nuestro Equipo</h2>
         <div className="team-members">
           <div className="team-member">
-            <img src={`${process.env.PUBLIC_URL}/rodion.jpg`} alt="Rodion" className="member-image" />
+            <img src={rodionImg} alt="Rodion" className="member-image" />
             <h3>Rodion</h3>
             <p>Full-Stack Developer</p>
             <p className="member-bio">Desarrollador con experiencia en React, Node.js y diseño de sistemas escalables.</p>
           </div>
           <div className="team-member">
-            <img src={`${process.env.PUBLIC_URL}/max.jpg`} alt="Sasha" className="member-image" />
+            <img src={maxImg} alt="Sasha" className="member-image" />
             <h3>Sasha</h3>
             <p>Designer</p>
             <p className="member-bio">Diseñadora especializada en UI/UX, creando interfaces intuitivas y atractivas.</p>
           </div>
           <div className="team-member">
-            <img src={`${process.env.PUBLIC_URL}/sasha.jpg`} alt="Max" className="member-image" />
+            <img src={sashaImg} alt="Max" className="member-image" />
             <h3>Max</h3>
             <p>Marketer</p>
             <p className="member-bio">Especialista en marketing digital y estrategias de conversión.</p>

@@ -1,20 +1,23 @@
 {
   "files": {
-    "main.css": "/relvus/static/css/main.1e28971c.css",
-    "main.js": "/relvus/static/js/main.98e2672d.js",
-    "static/media/reviewer-3.jpg": "/relvus/static/media/reviewer-3.524e49d76744b54f7125.jpg",
-    "static/media/reviewer-2.jpg": "/relvus/static/media/reviewer-2.665e6241ed62bbea1917.jpg",
-    "static/media/reviewer-1.jpg": "/relvus/static/media/reviewer-1.db150cb52666ba5e1ea2.jpg",
-    "static/media/hero-abstract.svg": "/relvus/static/media/hero-abstract.43f90e104c13d320908c61ff0c56f316.svg",
-    "static/media/service-business.svg": "/relvus/static/media/service-business.d3377800d107fc2355712d5d7e67d512.svg",
-    "static/media/service-cms.svg": "/relvus/static/media/service-cms.c085a978353fd09b6df0f861807a9e16.svg",
-    "static/media/service-landing.svg": "/relvus/static/media/service-landing.fe48f8a2a47116dc1b5ffe8d12d0f64c.svg",
-    "index.html": "/relvus/index.html",
-    "main.1e28971c.css.map": "/relvus/static/css/main.1e28971c.css.map",
-    "main.98e2672d.js.map": "/relvus/static/js/main.98e2672d.js.map"
+    "main.css": "/static/css/main.1e28971c.css",
+    "main.js": "/static/js/main.fc8d49af.js",
+    "static/media/rodion.jpg": "/static/media/rodion.4769db51d44adeca5cb9.jpg",
+    "static/media/reviewer-3.jpg": "/static/media/reviewer-3.524e49d76744b54f7125.jpg",
+    "static/media/reviewer-2.jpg": "/static/media/reviewer-2.665e6241ed62bbea1917.jpg",
+    "static/media/sasha.jpg": "/static/media/sasha.2a6e056d5ee2a9743dd8.jpg",
+    "static/media/max.jpg": "/static/media/max.43e09ec33ddf7bb22383.jpg",
+    "static/media/reviewer-1.jpg": "/static/media/reviewer-1.db150cb52666ba5e1ea2.jpg",
+    "static/media/hero-abstract.svg": "/static/media/hero-abstract.43f90e104c13d320908c61ff0c56f316.svg",
+    "static/media/service-business.svg": "/static/media/service-business.d3377800d107fc2355712d5d7e67d512.svg",
+    "static/media/service-cms.svg": "/static/media/service-cms.c085a978353fd09b6df0f861807a9e16.svg",
+    "static/media/service-landing.svg": "/static/media/service-landing.fe48f8a2a47116dc1b5ffe8d12d0f64c.svg",
+    "index.html": "/index.html",
+    "main.1e28971c.css.map": "/static/css/main.1e28971c.css.map",
+    "main.fc8d49af.js.map": "/static/js/main.fc8d49af.js.map"
   },
   "entrypoints": [
     "static/css/main.1e28971c.css",
-    "static/js/main.98e2672d.js"
+    "static/js/main.fc8d49af.js"
   ]
 }
