@@ -1,9 +1,12 @@
 {
   "files": {
     "main.css": "/relvus/static/css/main.1e28971c.css",
-    "main.js": "/relvus/static/js/main.98e2672d.js",
+    "main.js": "/relvus/static/js/main.60a833e0.js",
+    "static/media/rodion.jpg": "/relvus/static/media/rodion.4769db51d44adeca5cb9.jpg",
     "static/media/reviewer-3.jpg": "/relvus/static/media/reviewer-3.524e49d76744b54f7125.jpg",
     "static/media/reviewer-2.jpg": "/relvus/static/media/reviewer-2.665e6241ed62bbea1917.jpg",
+    "static/media/sasha.jpg": "/relvus/static/media/sasha.2a6e056d5ee2a9743dd8.jpg",
+    "static/media/max.jpg": "/relvus/static/media/max.43e09ec33ddf7bb22383.jpg",
     "static/media/reviewer-1.jpg": "/relvus/static/media/reviewer-1.db150cb52666ba5e1ea2.jpg",
     "static/media/hero-abstract.svg": "/relvus/static/media/hero-abstract.43f90e104c13d320908c61ff0c56f316.svg",
     "static/media/service-business.svg": "/relvus/static/media/service-business.d3377800d107fc2355712d5d7e67d512.svg",
@@ -11,10 +14,10 @@
     "static/media/service-landing.svg": "/relvus/static/media/service-landing.fe48f8a2a47116dc1b5ffe8d12d0f64c.svg",
     "index.html": "/relvus/index.html",
     "main.1e28971c.css.map": "/relvus/static/css/main.1e28971c.css.map",
-    "main.98e2672d.js.map": "/relvus/static/js/main.98e2672d.js.map"
+    "main.60a833e0.js.map": "/relvus/static/js/main.60a833e0.js.map"
   },
   "entrypoints": [
     "static/css/main.1e28971c.css",
-    "static/js/main.98e2672d.js"
+    "static/js/main.60a833e0.js"
   ]
 }
