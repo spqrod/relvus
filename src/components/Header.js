@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import '../styles/header.css';
 
-function Header() {
+function Header({ isHidden }) {
   const location = useLocation();
 
   const handleLogoClick = (e) => {
@@ -12,16 +12,20 @@ function Header() {
     }
   };
 
+  const isActive = (path) => {
+    return location.pathname === path;
+  };
+
   return (
-    <header className="header">
+    <header className={`header ${isHidden ? 'hidden' : ''}`}>
       <div className="nav-container">
         <Link to="/" className="logo" onClick={handleLogoClick}>Relvus</Link>
         <nav>
           <ul className="nav-links">
-            <li><Link to="/">Inicio</Link></li>
-            <li><Link to="/services">Servicios</Link></li>
-            <li><Link to="/about">Nosotros</Link></li>
-            <li><Link to="/contact">Contacto</Link></li>
+            <li><Link to="/services" className={isActive('/services') ? 'active' : ''}>Servicios</Link></li>
+            <li><Link to="/projects" className={isActive('/projects') ? 'active' : ''}>Proyectos</Link></li>
+            <li><Link to="/about" className={isActive('/about') ? 'active' : ''}>Nosotros</Link></li>
+            <li><Link to="/contact" className={isActive('/contact') ? 'active' : ''}>Contacto</Link></li>
           </ul>
         </nav>
       </div>

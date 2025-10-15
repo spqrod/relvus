@@ -44,7 +44,7 @@ function Services() {
         <div className="service-pricing">
           <div className="pricing-detail">
             <span className="pricing-label">Precio</span>
-            <span className="pricing-value">Desde $200.000 ARS</span>
+            <span className="pricing-value">Desde $400.000 ARS</span>
           </div>
           <div className="pricing-detail">
             <span className="pricing-label">Tiempo de entrega</span>
@@ -90,7 +90,7 @@ function Services() {
         <div className="service-pricing">
           <div className="pricing-detail">
             <span className="pricing-label">Precio</span>
-            <span className="pricing-value">Desde $500.000 ARS</span>
+            <span className="pricing-value">Desde $700.000 ARS</span>
           </div>
           <div className="pricing-detail">
             <span className="pricing-label">Tiempo de entrega</span>

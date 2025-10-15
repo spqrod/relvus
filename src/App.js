@@ -7,10 +7,11 @@ import Services from './pages/Services';
 import Contact from './pages/Contact';
 import About from './pages/About';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import Projects from './pages/Projects';
 import TermsOfService from './pages/TermsOfService';
 import './styles/global.css';
 
-function PageTransition({ children }) {
+function PageTransition({ setIsModalOpen }) {
   const location = useLocation();
   const [displayLocation, setDisplayLocation] = useState(location);
   const [transitionStage, setTransitionStage] = useState('fade-in');
@@ -35,11 +36,12 @@ function PageTransition({ children }) {
       onAnimationEnd={handleAnimationEnd}
     >
       <Routes location={displayLocation}>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home setIsModalOpen={setIsModalOpen} />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/terms-of-service" element={<TermsOfService />} />
       </Routes>
     </div>
@@ -47,11 +49,13 @@ function PageTransition({ children }) {
 }
 
 function App() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <Router>
-      <Header />
+      <Header isHidden={isModalOpen} />
       <main>
-        <PageTransition />
+        <PageTransition setIsModalOpen={setIsModalOpen} />
       </main>
       <Footer />
     </Router>

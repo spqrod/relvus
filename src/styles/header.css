@@ -5,9 +5,10 @@
   position: sticky;
   top: 0;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
-  z-index: 10;
+  z-index: 1000;
   height: var(--header-height);
   border-bottom: 1px solid var(--border-color);
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 
   .nav-container {
     display: flex;
@@ -46,6 +47,14 @@
         border-radius: 12px;
       }
 
+      li a.active {
+        color: var(--primary-color);
+      }
+
+      li a.active::before {
+        opacity: 1;
+      }
+
       li a::before {
         content: '';
         position: absolute;
@@ -70,4 +79,10 @@
       }
     }
   }
+}
+
+.header.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }

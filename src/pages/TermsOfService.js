@@ -6,7 +6,7 @@ function TermsOfService() {
     <div className="terms-of-service">
       <div className="terms-intro">
         <h1>Términos de Servicio</h1>
-        <p>Última actualización: {new Date().toLocaleDateString('es-AR')}</p>
+        <p>Última actualización: 14/10/2025</p>
       </div>
 
       <div className="terms-details">

@@ -20,7 +20,7 @@ function About() {
             <img src={rodionImg} alt="Rodion" className="member-image" />
             <h3>Rodion</h3>
             <p>Full-Stack Developer</p>
-            <p className="member-bio">Desarrollador con experiencia en React, Node.js y diseño de sistemas escalables.</p>
+            <p className="member-bio">Desarrollador con experiencia en React, Node.js, MongoDB, MySQL y diseño de sistemas escalables.</p>
           </div>
           <div className="team-member">
             <img src={maxImg} alt="Sasha" className="member-image" />
@@ -37,13 +37,6 @@ function About() {
         </div>
       </section>
 
-      <section className="cta-section">
-        <h2>¿Querés trabajar con nosotros?</h2>
-        <p>Estamos listos para ayudarte a hacer crecer tu negocio en línea</p>
-        <Link to="/contact">
-          <button>Contactanos</button>
-        </Link>
-      </section>
     </div>
   );
 }

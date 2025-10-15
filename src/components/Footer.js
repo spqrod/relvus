@@ -8,7 +8,7 @@ function Footer() {
       <div className="footer-main">
         <div className="footer-section footer-brand">
           <Link to="/" className="footer-logo">Relvus</Link>
-          <p className="footer-description">Desarrollo web profesional desde Colegiales, Buenos Aires</p>
+          <p className="footer-description">Desarrollo web profesional en Argentina</p>
           <p className="footer-love">Desde Buenos Aires con amor 💙</p>
         </div>
 
@@ -17,6 +17,7 @@ function Footer() {
           <ul className="footer-links">
             <li><Link to="/">Inicio</Link></li>
             <li><Link to="/services">Servicios</Link></li>
+            <li><Link to="/projects">Proyectos</Link></li>
             <li><Link to="/about">Nosotros</Link></li>
             <li><Link to="/contact">Contacto</Link></li>
           </ul>

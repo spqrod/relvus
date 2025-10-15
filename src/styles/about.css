@@ -82,28 +82,4 @@
     }
   }
 
-  .cta-section {
-    text-align: center;
-    padding: var(--section-padding) 20px;
-    margin-top: 40px;
-
-    h2 {
-      font-size: 2.8rem;
-      margin-bottom: 20px;
-    }
-
-    p {
-      font-size: 1.2rem;
-      color: rgba(241, 245, 249, 0.8);
-      margin-bottom: 32px;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    button {
-      font-size: 1.15rem;
-      padding: 20px 48px;
-    }
-  }
 }

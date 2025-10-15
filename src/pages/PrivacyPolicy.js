@@ -6,7 +6,7 @@ function PrivacyPolicy() {
     <div className="privacy-policy">
       <div className="policy-intro">
         <h1>Política de Privacidad</h1>
-        <p>Última actualización: {new Date().toLocaleDateString('es-AR')}</p>
+        <p>Última actualización: 14/10/2025</p>
       </div>
 
       <div className="policy-details">

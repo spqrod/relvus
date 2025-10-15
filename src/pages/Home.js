@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/home.css';
 import heroImage from '../images/hero-abstract.svg';
@@ -9,7 +9,24 @@ import reviewer1 from '../images/reviewer-1.jpg';
 import reviewer2 from '../images/reviewer-2.jpg';
 import reviewer3 from '../images/reviewer-3.jpg';
 
-function Home() {
+function Home({ setIsModalOpen }) {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [currentWebsite, setCurrentWebsite] = useState('');
+
+  const openModal = (url) => {
+    setCurrentWebsite(url);
+    setModalOpen(true);
+    setIsModalOpen(true);
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+    setCurrentWebsite('');
+    setIsModalOpen(false);
+    document.body.style.overflow = 'unset';
+  };
+
   return (
     <div className="home">
       <section className="hero-section">
@@ -36,7 +53,7 @@ function Home() {
               <h3>Landing Page</h3>
               <p>Páginas de aterrizaje efectivas que convierten visitantes en clientes</p>
               <div className="service-details">
-                <p className="service-price">Desde $200.000 ARS</p>
+                <p className="service-price">Desde $400.000 ARS</p>
                 <p className="service-time">Desde 1 semana</p>
               </div>
             </div>
@@ -47,7 +64,7 @@ function Home() {
               <h3>Sitio Web Empresarial</h3>
               <p>Sitios corporativos completos que reflejan la profesionalidad de tu empresa</p>
               <div className="service-details">
-                <p className="service-price">Desde $500.000 ARS</p>
+                <p className="service-price">Desde $700.000 ARS</p>
                 <p className="service-time">Desde 1 semana</p>
               </div>
             </div>
@@ -65,6 +82,108 @@ function Home() {
           </div>
         </div>
       </section>
+
+      <section className="projects-section">
+        <h2>Proyectos Completados</h2>
+        <p className="projects-intro">Algunos de los sitios web que hemos creado para nuestros clientes</p>
+        <div className="projects-grid">
+          <div className="project-card" onClick={() => openModal('https://drzakharenko.com.ar')}>
+            <div className="project-preview">
+              <div className="project-browser-bar">
+                <div className="browser-dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div className="browser-url">drzakharenko.com.ar</div>
+              </div>
+              <div className="project-screenshot">
+                <iframe
+                  src="https://drzakharenko.com.ar"
+                  title="Dr. Zakharenko Preview"
+                  className="project-preview-iframe"
+                  scrolling="no"
+                />
+              </div>
+            </div>
+            <div className="project-info">
+              <h3>Dr. Zakharenko</h3>
+              <p>Sitio web profesional para consultoría médica veterinaria</p>
+            </div>
+          </div>
+
+          <div className="project-card" onClick={() => openModal('https://kalaharibiocare.com')}>
+            <div className="project-preview">
+              <div className="project-browser-bar">
+                <div className="browser-dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div className="browser-url">kalaharibiocare.com</div>
+              </div>
+              <div className="project-screenshot">
+                <iframe
+                  src="https://kalaharibiocare.com"
+                  title="Kalahari Biocare Preview"
+                  className="project-preview-iframe"
+                  scrolling="no"
+                />
+              </div>
+            </div>
+            <div className="project-info">
+              <h3>Kalahari Biocare</h3>
+              <p>E-commerce de productos naturales y wellness</p>
+            </div>
+          </div>
+
+          <div className="project-card" onClick={() => openModal('https://duikertravels.com')}>
+            <div className="project-preview">
+              <div className="project-browser-bar">
+                <div className="browser-dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div className="browser-url">duikertravels.com</div>
+              </div>
+              <div className="project-screenshot">
+                <iframe
+                  src="https://duikertravels.com"
+                  title="Duiker Travels Preview"
+                  className="project-preview-iframe"
+                  scrolling="no"
+                />
+              </div>
+            </div>
+            <div className="project-info">
+              <h3>Duiker Travels</h3>
+              <p>Plataforma de reservas y turismo personalizado</p>
+            </div>
+          </div>
+        </div>
+        <div className="projects-cta">
+          <Link to="/projects">
+            <button>Ver más proyectos</button>
+          </Link>
+        </div>
+      </section>
+
+      {modalOpen && (
+        <>
+          <div className="modal-backdrop" onClick={closeModal}></div>
+          <div className="website-modal" onClick={closeModal}>
+            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+              <button className="modal-close" onClick={closeModal}>✕</button>
+              <iframe
+                src={currentWebsite}
+                title="Website Preview"
+                className="website-iframe"
+              />
+            </div>
+          </div>
+        </>
+      )}
 
       <section className="advantages-section">
         <h2>¿Por qué elegirnos?</h2>
